@@ -77,6 +77,48 @@ l[0] = 200
 
 print(l)
 
+# множества
+
+s1 = {1,2,3,3,2,8}
+s2 = {1,4,5,6,2,7,8}
+print(s1)
+
+print(s1.intersection(s2))
+
+print(s2 - s1)
+
+# словари
+
+d = {
+    "key": "value",
+    "another": "another_value"
+}
+
+user1 = {
+    "name": "Vasya",
+    "age": 18
+}
+
+user2 = {
+    "name": "Petya",
+    "age": 20
+}
+
+users = {
+    25: user1,
+    64: user2
+}
+
+print(user1["name"])
+print(user2["name"])
+
+print(users[64])
+
+print(users.items())
+print(user1.items())
+
+print(users.get(50, {"name": "default user"}))
+print(users.get(25, {"name": "default user"}))
 
 
 
