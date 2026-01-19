@@ -120,9 +120,35 @@ print(user1.items())
 print(users.get(50, {"name": "default user"}))
 print(users.get(25, {"name": "default user"}))
 
+users[55] = {"name": "Oleg", "age": 32}
+print(users.items())
 
+users[25] = {"name": "Astral", "age": 182}
+print(users.items())
 
+l1 = [1, 2, 3]
+l2 = l1
+l2.append(4)
+print(l1)
+print(l2)
 
+from copy import deepcopy
 
+l1 = [1, 2, 3]
+l2 = deepcopy(l1)
+l2.append(4)
+print(l1)
+print(l2)
+
+# кортежи
+
+t1 = (1, 2, [3, 2, 4, 5])
+print(t1.count(2))
+
+frozenset({1, 2, 3, 4, 5})
+
+from pprint import pprint
+
+pprint(list(users.items()))
 
 
