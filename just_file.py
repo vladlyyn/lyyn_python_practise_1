@@ -36,7 +36,7 @@ print(email.split("@"))
 print(email.
       split("@"))
 
-a = "Hello" " Hello"
+a = "Hello"
 b = "world"
 
 print(a + b)
@@ -44,7 +44,38 @@ print(a + ", " + b + "!")
 
 print("{a}, {b}!".format(a=a, b=b))
 print(f"{a}, {b.upper()}!")
+print(f"{a=}, {b=}!")
+print("%s, %s!" % (a, b))
 
+url_template = "https://www.yourservice.com"
+
+user_url = url_template.format("users")
+groups_url = url_template.format("groups")
+
+s = "1234"
+n = 1234
+# assert int(s) == n
+
+assert s.isdigit()
+
+#списки
+
+l = [1, 2, 3, a, b, [4, 5, 6]]
+print(l[0])
+print(l[-1][1])
+print(l[::-1])
+
+
+l.append(7)
+l.extend(["elem", "another elem"])
+l.reverse()
+l.reverse()
+print(len(l))
+print(l)
+
+l[0] = 200
+
+print(l)
 
 
 
